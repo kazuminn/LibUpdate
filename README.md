@@ -13,8 +13,6 @@ LibUpdate
 *selenium (pip install selenium)  
 *PhantomJS (brew install PhantomJS) 
 *本への愛情(Priceless)  
-　　
-　　
 んで、ターミナルで、  
 $ python LibUpdate.py  
   
