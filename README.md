@@ -7,12 +7,12 @@ LibUpdate
 
 ### Usage  
 まずは用意するもの  
--Python(2.x系 (better 2.7))  
--[homebrew](http://brew.sh/)  
--pip (brew install pip)  
--selenium (pip install selenium)  
--PhantomJS (brew install PhantomJS) 
--本への愛情(Priceless)  
+- Python(2.x系 (better 2.7))  
+- [homebrew](http://brew.sh/)  
+- pip (brew install pip)  
+- selenium (pip install selenium)  
+- PhantomJS (brew install PhantomJS) 
+- 本への愛情(Priceless)  
   
 んで、ターミナルで、  
 $ python LibUpdate.py  
