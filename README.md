@@ -20,3 +20,11 @@ $ python LibUpdate.py
 ### オススメ  
 返却期限は2週間後だから、2週間単位でCronとかで実行してあげるといいかも。  
 
+
+AddFork
+=======
+DRYになっていないところがあったので修正した。
+
+###Usage 
+- book_num_1とbook_num_2に借りている本数をstoreしてください。
+
