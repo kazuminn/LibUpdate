@@ -27,26 +27,18 @@ class Sel(unittest.TestCase):
         driver.find_element_by_css_selector("input[type=\"submit\"]").click()
         driver.find_element_by_link_text(u"確認する").click()
         driver.find_element_by_id("lending_line").click()
-        driver.find_element_by_name("lending_line1").click()
-        driver.find_element_by_name("lending_line2").click()
-        driver.find_element_by_name("lending_line3").click()
-        driver.find_element_by_name("lending_line4").click()
-        driver.find_element_by_name("lending_line5").click()
-        driver.find_element_by_name("lending_line6").click()
-        driver.find_element_by_name("lending_line7").click()
-        driver.find_element_by_name("lending_line8").click()
-        driver.find_element_by_name("lending_line9").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-        driver.find_element_by_css_selector("input[type=\"button\"]").click()
-    
+        
+        book_num_1 = 4
+        book_num_2 = 4
+        
+        while book_num < 1:
+            driver.find_element_by_name("lending_line" + n).click()
+            book_num = 1 
+
+        while book_num < book_num_2:
+            driver.find_element_by_css_selector("input[type=\"button\"]").click()
+            book_num = 0
+            
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
         except NoSuchElementException, e: return False
