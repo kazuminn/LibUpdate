@@ -28,12 +28,12 @@ class Sel(unittest.TestCase):
         driver.find_element_by_link_text(u"確認する").click()
         driver.find_element_by_id("lending_line").click()
         
-        numbook = 10
+        numbook = 1
     
-        while numbook > 1:
+        while numbook > 10:
             
             try:
-                driver.find_element_by_name("lending_line" + n).click()
+                driver.find_element_by_name("lending_line" + numbook).click()
                 driver.find_element_by_css_selector("input[type=\"button\"]").click()
             except:
                 break
