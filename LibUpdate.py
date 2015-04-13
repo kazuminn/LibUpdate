@@ -31,9 +31,9 @@ class Sel(unittest.TestCase):
         book_num = 10  
     
         while book_num < 1:
-            driver.find_element_by_name("lending_line" + n).click()
             
             try:
+                driver.find_element_by_name("lending_line" + n).click()
                 driver.find_element_by_css_selector("input[type=\"button\"]").click()
             except:
                 break
