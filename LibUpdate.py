@@ -37,7 +37,7 @@ class Sel(unittest.TestCase):
                 driver.find_element_by_css_selector("input[type=\"button\"]").click()
             except:
                 break
-            book_num = 1
+            book_num = book_num + 1
             
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
