@@ -28,16 +28,16 @@ class Sel(unittest.TestCase):
         driver.find_element_by_link_text(u"確認する").click()
         driver.find_element_by_id("lending_line").click()
         
-        book_num_1 = 4
-        book_num_2 = 4
-        
-        while book_num_1 < 1:
+        book_num = 12  
+    
+        while book_num < 1:
             driver.find_element_by_name("lending_line" + n).click()
-            book_num = 1 
-
-        while book_num_1 < book_num_2:
-            driver.find_element_by_css_selector("input[type=\"button\"]").click()
-            book_num = 0
+            
+            try:
+                driver.find_element_by_css_selector("input[type=\"button\"]").click()
+            except:
+                break
+            book_num = 1
             
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
