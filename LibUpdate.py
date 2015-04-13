@@ -31,11 +31,11 @@ class Sel(unittest.TestCase):
         book_num_1 = 4
         book_num_2 = 4
         
-        while book_num < 1:
+        while book_num_1 < 1:
             driver.find_element_by_name("lending_line" + n).click()
             book_num = 1 
 
-        while book_num < book_num_2:
+        while book_num_1 < book_num_2:
             driver.find_element_by_css_selector("input[type=\"button\"]").click()
             book_num = 0
             
